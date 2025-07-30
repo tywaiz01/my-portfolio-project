@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #e50914;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.info-box {
+  text-align: center;
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+.info-box i {
+  font-size: 24px;
+  color: #e50914;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.info-box h4 {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group-inline {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #1a1a1a;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+}
+
+.form-group-inline input {
+  flex: 1;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #bf0810;
+}
+
+  </style>
+</head>
+<body>
+  <section class="contact-section">
+    <h1 class="section-title">Contact Me</h1>
+    <div class="contact-info">
+      <div class="info-box">
+        <i class="fas fa-phone"></i>
+        <h4>Call Us On</h4>
+        <p>+91 8800 000 000</p>
+      </div>
+      <div class="info-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>Office</h4>
+        <p>44 Street, New Delhi, India</p>
+      </div>
+      <div class="info-box">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <p>info@gmail.com</p>
+      </div>
+    </div>
+    
+    <form class="contact-form">
+      <div class="form-group-inline">
+        <input type="text" placeholder="Name*" required />
+        <input type="email" placeholder="Email*" required />
+      </div>
+      <input type="text" placeholder="Subject*" required />
+      <textarea placeholder="Your Message..." rows="6" required></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
